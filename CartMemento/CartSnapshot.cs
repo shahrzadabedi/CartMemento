@@ -15,7 +15,7 @@ namespace CartMemento
 
             this.CreateDateTime = createDateTime;
             this.Customer = customer;
-            this._cartItems = cartItems.Select(p=> p.Save()).ToList();            
+            this._cartItems = cartItems.Select(p=> p.CreateSnapshot()).ToList();            
         }
        
        

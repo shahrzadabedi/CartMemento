@@ -7,7 +7,7 @@
         {
             this.Name = Name;
         }
-        public FoodSnapshot Save()
+        public FoodSnapshot CreateSnapshot()
         {
             return new FoodSnapshot(this.Name);
         }

@@ -14,7 +14,7 @@ namespace CartMemento
         }
         public void Backup()
         {
-            this._mementos.Add(this._cart.Save());
+            this._mementos.Add(this._cart.CreateSnapshot());
         }
 
         public void Undo()

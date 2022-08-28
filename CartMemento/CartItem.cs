@@ -7,9 +7,9 @@
         {
             this.Food = Food;
         }
-        public CartItemSnapshot Save()
+        public CartItemSnapshot CreateSnapshot()
         {
-            return new CartItemSnapshot(this.Food.Save());
+            return new CartItemSnapshot(this.Food.CreateSnapshot());
         }
        
 

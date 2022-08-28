@@ -22,7 +22,7 @@ namespace CartMemento
             _cartItems.Add(cartItem);
         }
         // Saves the current state inside a memento.
-        public CartSnapshot Save()
+        public CartSnapshot CreateSnapshot()
         {
             return new CartSnapshot(this.CreateDateTime,this.Customer,this._cartItems);
         }
