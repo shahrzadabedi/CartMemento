@@ -11,10 +11,7 @@
         {
             return new FoodSnapshot(this.Name);
         }
-        private FoodSnapshot CreateFoodSnapshot(Food food)
-        {
-            return new FoodSnapshot(food.Name);
-        }
+
         // Restores the Originator's state from a memento object.
         public void Restore(FoodSnapshot memento)
         {
